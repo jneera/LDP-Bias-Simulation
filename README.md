@@ -8,10 +8,6 @@
 
 ---
 
-This repository contains the complete source code for all experiments reported in:
-
-> Neera, J. & Franca, L. (2026). *The Hidden Cost of Clipping: Privacy Mechanisms and Bounded Domain Bias in Recommender Systems*. Proceedings of ESORICS 2026.
-
 ## 📖 Study Overview
 
 Recommendation systems increasingly rely on Local Differential Privacy (LDP) to protect user rating data. A common workaround for unbounded noise (Laplace/Gaussian) is to clip perturbed ratings back to the valid range — but this introduces **systematic estimator bias** that structurally disadvantages users who rate at the extremes of the scale. This paper provides the first formal proof of this bias and the first systematic head-to-head comparison of four LDP mechanisms for collaborative filtering.
@@ -121,31 +117,6 @@ from mechanisms.clipped_gaussian import clipped_gaussian_mechanism
 Install all with:
 ```bash
 pip install -r requirements.txt
-```
-
----
-
-## 👥 Authors
-
-| Role | Name | Affiliation |
-|---|---|---|
-| Lead author & corresponding author | Jeyamohan Neera | School of Computer Science, Northumbria University, UK |
-| Co-author | Lucas Franca | School of Computer Science, Northumbria University, UK |
-
----
-
-## 📄 Citation
-
-If you use this code, please cite:
-
-```bibtex
-@inproceedings{neera2026hiddencost,
-  title     = {The Hidden Cost of Clipping: Privacy Mechanisms and Bounded Domain Bias in Recommender Systems},
-  author    = {Neera, Jeyamohan and Franca, Lucas},
-  booktitle = {Proceedings of ESORICS 2026},
-  year      = {2026},
-  publisher = {Springer}
-}
 ```
 
 ---
